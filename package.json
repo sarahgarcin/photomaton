@@ -1,0 +1,36 @@
+{
+  "name": "conference-tool",
+  "version": "1.0.0",
+  "description": "conference tool",
+  "main": "main.js",
+  "scripts": {
+    "test": "plop",
+    "start": "node server.js"
+  },
+  "author": "Sarah Garcin",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "easyimage": "^2.1.0",
+    "express": "^4.13.4",
+    "fs-extra": "^0.26.5",
+    "glob": "^7.0.3",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "moment": "^2.14.1",
+    "path": "^0.12.7",
+    "phantom": "^2.1.8",
+    "serve-favicon": "^2.3.0",
+    "socket.io": "^1.4.5",
+    "underscore": "^1.8.3",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0"
+  }
+}

@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/css/style.css')
+    title #{title}
+  body.capture.photomaton
+
+    div.content-wrapper
+      div.page
+        div.header
+          input(placeholder="Titre")
+
+        div.main
+          div(class='cell' data-index="1" data-status="en-cours")
+           div.video-view
+              //- display camera
+              video(id="video" autoplay)
+          
+              div.btn-capture-wrapper
+                div.photo-capture
+                  #capture-btn.btn.icon
+                    include images/record.svg
+
+            //- div.flash.preview.preview_image
+            //-   img.output
+            //-   a(href="#" title="Dodoc media" class='button-wrapper_deleteMediaCapture js--delete-media-capture #{defaultClasses}')
+            //-     .btn.icon
+            //-       include images/clear.svg
+
+          div.generate-pdf
+            .btn.icon#pdf
+              include images/enregistre.svg
+
+
+    script(src='/socket.io/socket.io.js')
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/bower_components/foundation/js/foundation.min.js')
+    script(src="/bower_components/recordrtc/RecordRTC.min.js")
+    script(src='/js/capture-boitier.js')
+    script(src='/js/photo.js')
+    script(src='/js/capture.js')
+
+
